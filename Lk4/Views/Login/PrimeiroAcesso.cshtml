@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "PrimeiroAcesso";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+<div id="container">
+    <!-- CONTAINER LOGO DE LOGIN -->
+    <div id="login-logo2">
+        <img src="../Content/img/logo_lookhereformaturas.png">
+    </div><!-- IMAGEM DA LOGO INICIAL DO LOGIN-->
+</div>
+
+<div id="container-inputs">
+    <!-- CONTAINER FORMULARIO -->
+    <form action="@Url.Action("ValidaToken", "Login", new { id = "ad87508b2709680d9114c1c68b5313b6" })">
+        <!-- FORMULÁRIO COM INPUTS, BUTON-->
+        <input class="inputs" type="text" name="token" placeholder="Digite seu token" required>
+        <!--<button class="inputs-button" type="submit" name="senha" form="form1" value="Submit">Login</button>-->
+        <input class="inputs-button" type="submit" name="senha" placeholder="Digite sua senha">
+    </form><!-- FINAL DO FORM COM VALIDAÇÕES DE EMAIL, REQUIRED, PASSWORD E BUTTON SUBMIT-->
+</div><!-- CONTAINER FORMULARIO -->
+

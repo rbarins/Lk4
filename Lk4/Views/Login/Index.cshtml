@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+<div id="container">
+    <!-- CONTAINER LOGO DE LOGIN -->
+    <div id="login-logo2">
+        <img src="../Content/img/logo_lookhereformaturas.png">
+    </div><!-- IMAGEM DA LOGO INICIAL DO LOGIN-->
+</div>
+
+<div id="container-inputs">
+    <!-- CONTAINER FORMULARIO -->
+    <form action="@Url.Action("Autenticacao")">
+        <!-- FORMULÁRIO COM INPUTS, BUTON-->
+        <input class="inputs" type="email" name="email" placeholder="Digite seu e-mail" required>
+        <input class="inputs" type="password" name="senha" placeholder="Digite sua senha" required>
+        <div style="text-align: center;margin-top: 15px;">
+            <a href="@Url.Action("PrimeiroAcesso", "Login")">Primeiro Acesso</a>
+        </div>
+        <!--<button class="inputs-button" type="submit" name="senha" form="form1" value="Submit">Login</button>-->
+        <input class="inputs-button" type="submit" name="senha" placeholder="Digite sua senha">
+    </form><!-- FINAL DO FORM COM VALIDAÇÕES DE EMAIL, REQUIRED, PASSWORD E BUTTON SUBMIT-->
+</div><!-- CONTAINER FORMULARIO -->

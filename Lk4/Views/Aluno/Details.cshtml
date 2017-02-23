@@ -1,0 +1,114 @@
+﻿@model Lk4.Models.Aluno
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Aluno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoSenha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoSenha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoToken)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoToken)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoDataCadastro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoDataCadastro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoSexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoSexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoCpf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoCpf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoRg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoRg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoTurma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoTurma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoDataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoDataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlunoDataAtivacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlunoDataAtivacao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AlunoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

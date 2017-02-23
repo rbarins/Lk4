@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Lk4.Models.Aluno>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoSenha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoToken)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoNome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoDataCadastro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoSexo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoCpf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoRg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoTurma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoDataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlunoDataAtivacao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoSenha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoToken)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoDataCadastro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoSexo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoCpf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoRg)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoTurma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoDataNascimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlunoDataAtivacao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AlunoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AlunoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AlunoId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Look Here</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script><!-- JQUERY -->
+    <script src="http://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script><!-- NICESCROLL -->
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/js")
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <!-- NAV/MENU PRINCIPAL SITUADO NO TOP DA TELA-->
+        <div id="button-menu"></div><!-- BOTÃO PARA OCULTAR/MOSTRAR MENU-->
+        <div id="logo"><img src="../../lk4/Content/img/logo_lookhereformaturas.png"></div><!-- LOGO NAV-->
+    </nav>
+    <div id="menu">
+        <!-- MENU PRINCIPAL SITUADO A ESQUEDA DA TELA -->
+        <div class="cont-menu">
+            <ul>
+                <!-- MENU 1-->
+                <a href="@Url.Action("Index", "Dashboard")"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/inicio.png"></div><li>Início</li></a>
+                <a href="@Url.Action("Index", "Aluno")"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/meu_perfil.png"></div><li>Meu Perfil</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/inicio.png"></div><li>Contrato</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/agenda.png"></div><li>Agenda</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/contato.png"></div><li>Contato</li></a>
+            </ul>
+        </div>
+
+        <div class="cont-menu">
+            <div class="text-menu-title">Financeiro</div>
+            <ul>
+                <!-- MENU 2-->
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/boleto.png"></div><li>Boleto</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/livro_caixa.png"></div><li>Livro Caixa</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/extrato_financeiro.png"></div><li>Extrato Financ</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/minha_turma.png"></div><li>Minha Turma</li></a>
+            </ul>
+        </div>
+
+        <div class="cont-menu">
+            <div class="text-menu-title">Ajustes</div>
+            <ul>
+                <!-- MENU 3-->
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/configuracoes.png"></div><li>Configurações</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/avaliar_app.png"></div><li>Avaliar App</li></a>
+                <a href="#"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/ajuda.png"></div><li>Ajuda</li></a>
+                <a href="@Url.Action("Index", "Login")"><div class="img-menu"><img src="../../lk4/Content/img/icons_menu/sair.png"></div><li>Sair</li></a>
+            </ul>
+        </div>
+    </div>
+    <div id="all"></div><!-- SE TIRAR DA PAU -->
+    <div id="container">
+        @RenderBody()
+    </div>
+</html>

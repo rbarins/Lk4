@@ -1,0 +1,365 @@
+body{
+	margin: 0px;
+	overflow-x: hidden;
+	background: url("../img/fundo.jpg");
+}
+
+nav{
+	height: 20px;
+	width: 100%;
+	padding: 10px 0 10px 0;	
+	background: #dfca87;
+	position: fixed;
+	z-index: 99
+}
+
+#menu{
+	height: 100%;
+	width: 70%;
+	max-width: 250px;
+	margin-top: 40px;
+	float: left;
+	background: #d9c880;
+	display: none;
+	box-shadow: 1px 1px 3px #9f926a;
+	position: absolute;
+
+}
+
+#button-menu{
+	height: 30px;
+	width: 30px;
+	margin: -5px 0 0 5px;
+	background: url("../img/icon_menu.png");
+	position: absolute;
+	cursor: pointer;
+	float: left;
+}
+
+#logo img{
+	height: 100%;
+	width: 80px;
+	background: no-repeat;
+	float: right;
+	margin-right: 10px;
+}
+
+.cont-menu{
+	height: auto;
+	width: 100%;
+	margin-top: 10px;
+	padding: 3px 0 3px 0;
+	border-bottom: 1px solid #fff;	
+}
+
+ul li{
+	height: 20px;
+	width: 100%;
+	margin-left: -20%;
+}
+
+ul a li, ul li a, a{	
+	color: #fff;
+    list-style: none !important;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.text-menu-title{	
+	color: #fff;
+	list-style: none !important;
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+.img-menu{
+	float: left;
+
+}
+.img-menu img{
+	height: 15px;
+	width: 15px;
+	margin-left: -21px;
+}
+
+#container{
+
+	width: 100%;
+	position: absolute;
+	z-index: -99;	
+}
+
+
+/* PÁGINA DE LOGIN */
+
+#login-logo, #login-logo img{
+	height: 100px;
+	width: 250px;
+	margin:  0 auto;
+	padding-top: 10px;
+}
+
+#container-inputs{
+	clear: both;
+	height: auto;
+	width: 80%;
+	padding-top: 200px;
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+.inputs, .inputs-button{
+	height: 30px;
+	width: 100%;
+	margin-top: 15px;
+	border-radius: 2px;
+	border: 1px solid #fff;
+}
+
+.inputs-button{
+	border: 1px solid #e3d28a;
+	background: #e3d28a;
+	cursor: pointer;
+	color: #fff;
+	font-weight: bolder;
+}
+
+/* TELA DE BEM VINDO */
+
+#text-bem{
+	padding-top: 80px;
+	height: 40px;
+	width: 200px;
+	margin: 0 auto;
+	font-size: 36px;
+	font-family: "Tahoma";
+	color: #fff;
+	text-align: left;
+}
+#text-bem2{
+	height: 80px;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 36px;
+	font-family: "Tahoma";
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#loading, #loading img{
+	clear: both;
+	height: 60px;
+	width: 70px;
+	position: relative;
+	top: 120px;
+	margin: 0 auto;
+}
+
+/** TELA PRINCIPAL **/
+
+#login-logo2, #login-logo2 img{
+	width: 200px;
+    margin: 0 auto;
+    margin-top: 37px;
+    text-align: center;
+}
+
+#login-slogan, #login-slogan img{
+	padding-top: 10px;
+	height:143px;
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#all{
+	clear: both;
+	height: 40px;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#cont-wrp{
+    clear: both;
+    height: 376px;
+    margin: 0 auto;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.cont-left70{
+	height: 70%;
+	width: 70%;
+	float: left;
+}
+
+.cont-right30{
+	height: 70%;
+	width: 29%;
+	float: right;
+    margin-bottom: 5px;
+}
+
+#boleto{
+	height: 60%;
+	width: 100%;
+    background: #e3d28a;
+    margin-bottom: 3px;
+}
+
+.cont-left50{
+	height: 40%;
+	width: 49%;
+	float: left;
+    background: #e3d28a;
+}
+
+.cont-right50{
+	height: 40%;
+	width: 49%;
+	float: right;
+    background: #e3d28a;
+}
+
+#text-cont-right50 {
+   text-align: center;
+    padding-top: 8px;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+
+#text-boleto{
+    padding: 5px;
+    min-height: 40%;
+    max-height: 70%;
+    padding-top: 8px;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+
+#img-boleto img{
+    height: 60px;
+    /* width: 100px; */
+    float: left;
+    margin-left: 10px;
+}
+.facebook{
+	clear: both;
+	height: 50%;
+	width: 100%;
+	background: #e3d28a;
+    margin-bottom: 3px;
+}
+
+.facebook img{
+	clear: both;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 37px;
+}
+
+#text-facebook {
+   text-align: center;
+    padding-top: 8px;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+        margin-top: 11px;
+}
+
+#nmbr-blt{
+	text-align: right;
+	margin: 45px 5px 0 0;
+	font-size: 16px;
+	font-family: "Tahoma";
+	font-weight: bolder;
+	color: #fff;
+}
+
+.img-contrato, .img-contrato img{
+    clear: both;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+}
+
+.img-agenda, .img-agenda img{
+	    clear: both;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+}
+
+.instagran{
+	clear: both;
+	height: 50%;
+	width: 100%;
+	background: #e3d28a;
+}
+
+.instagran img{
+	clear: both;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 37px;
+}
+
+#text-instagran {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    margin-top: 13px;
+}
+
+#geral{
+	clear: both;
+	height: 24%;
+	width: 100%;
+	margin: 0 auto;
+    background: #e3d28a;
+}
+#just-margin{
+
+}
+
+.geral-icons{
+	height: auto;
+    width: 25%;
+    float: left;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-align: bottom;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+}
+
+.geral-icons-text{
+    height: auto;
+    float: right;
+    color: #fff;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    margin-top: 64px;
+    margin-right: 11px;
+}
+
+.geral-icons img{
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin: 20px 20px 0 20px;
+}
